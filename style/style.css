@@ -1,0 +1,68 @@
+html {
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: "Noto Sans Light";
+    src: url("./font/noto-sans-sc/NotoSansSC-Light.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Sans Bold";
+    src: url("./font/noto-sans-sc/NotoSansSC-Bold.otf");
+    font-display: swap;
+}
+
+b, strong, .bold-text, h1, h2, h3, h4, h5, h6 {
+    font-family: "Noto Sans Bold", "Microsoft Yahei", Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    background-color: #613d6a;
+    color: #fff;
+    font-family: "Noto Sans Light", "Microsoft Yahei", Helvetica, sans-serif;
+}
+
+.header {
+    margin: 20px auto;
+    background-color: #8d549d;
+    padding: 10px 10px;
+    border-radius: 6px;
+}
+
+.topnav {
+    overflow: hidden;
+    margin: 20px auto;
+    background-color: #dcc7e0;
+    color: #613d6a;
+    padding: 10px 10px;
+    border-radius: 6px;
+}
+
+.topnav a {
+    display: left;
+    color: #613d6a;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    font-family: "Noto Sans Bold", "Microsoft Yahei", Helvetica, sans-serif;
+}
+
+.footer {
+    margin: 20px auto;
+    background-color: #8d549d;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 6px;
+}
+
+@media screen and (min-width: 690px) {
+    .header, .topnav, .footer {
+        width: 650px;
+    }
+}
