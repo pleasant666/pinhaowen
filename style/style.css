@@ -15,14 +15,14 @@ html {
 }
 
 b, strong, .bold-text, h1, h2, h3, h4, h5, h6 {
-    font-family: "Noto Sans Bold", "Microsoft Yahei", Helvetica, sans-serif;
+    font-family: "Noto Sans Bold", Helvetica, sans-serif;
     font-weight: normal;
 }
 
 body {
     background-color: #613d6a;
     color: #fff;
-    font-family: "Noto Sans Light", "Microsoft Yahei", Helvetica, sans-serif;
+    font-family: "Noto Sans Light", Helvetica, sans-serif;
 }
 
 .header {
@@ -49,7 +49,23 @@ body {
 }
 
 a:hover {
-    font-family: "Noto Sans Bold", "Microsoft Yahei", Helvetica, sans-serif;
+    font-family: "Noto Sans Bold", Helvetica, sans-serif;
+}
+
+.lobby {
+    margin: 20px auto;
+    background-color: #8d549d;
+    padding: 10px 10px;
+    border-radius: 6px;
+}
+
+.lobby .room-choice {
+    overflow: hidden;
+    margin: 20px auto;
+    background-color: #dcc7e0;
+    color: #613d6a;
+    padding: 10px 10px;
+    border-radius: 6px;
 }
 
 .footer {
@@ -62,7 +78,7 @@ a:hover {
 }
 
 @media screen and (min-width: 690px) {
-    .header, .topnav, .footer {
+    .header, .topnav, .lobby, .footer {
         width: 650px;
     }
 }
