@@ -19,6 +19,14 @@ b, strong, .bold-text, h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-family: "Noto Sans Bold", Helvetica, sans-serif;
+}
+
 body {
     background-color: #613d6a;
     color: #fff;
@@ -45,11 +53,6 @@ body {
     display: left;
     color: #613d6a;
     text-align: center;
-    text-decoration: none;
-}
-
-a:hover {
-    font-family: "Noto Sans Bold", Helvetica, sans-serif;
 }
 
 .lobby {
@@ -60,12 +63,35 @@ a:hover {
 }
 
 .lobby .room-choice {
-    overflow: hidden;
     margin: 20px auto;
     background-color: #dcc7e0;
     color: #613d6a;
     padding: 10px 10px;
     border-radius: 6px;
+    display: grid;
+    grid-template-columns: 150px 1fr 120px;
+    align-items: center;
+}
+
+.room-choice a {
+    color: #613d6a;
+    text-decoration: none;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.room-choice .information {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.room-choice .number-of-ppl {
+    text-align: right;
+    white-space: nowrap;
 }
 
 .footer {
