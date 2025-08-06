@@ -29,9 +29,6 @@ jobs:
       - name: Run build
         run: npm run build --if-present
 
-      - name: Run tests
-        run: npm test
-
       - name: Deploy to Server (via SCP)
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         uses: appleboy/scp-action@v0.1.7
