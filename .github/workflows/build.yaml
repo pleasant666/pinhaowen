@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     strategy:
       matrix:
@@ -37,5 +37,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           keY: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
-          source: 'dist/*'
-          target: '/var/www/your-site'
+          source: 'dist/'
+          target: '/var/www/pinhaowen'
+          strip_components: 1
