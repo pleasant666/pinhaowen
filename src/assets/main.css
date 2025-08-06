@@ -1,35 +1,121 @@
-@import './base.css';
+html {
+  font-size: 18px;
+}
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@font-face {
+  font-family: 'Noto Sans Light';
+  src: url('./font/noto-sans-sc/NotoSansSC-Light.otf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans Bold';
+  src: url('./font/noto-sans-sc/NotoSansSC-Bold.otf');
+  font-display: swap;
+}
+
+b,
+strong,
+.bold-text,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Noto Sans Bold', Helvetica, sans-serif;
   font-weight: normal;
 }
 
-a,
-.green {
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+a:hover {
+  font-family: 'Noto Sans Bold', Helvetica, sans-serif;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+body {
+  background-color: #613d6a;
+  color: #fff;
+  font-family: 'Noto Sans Light', Helvetica, sans-serif;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+.header {
+  margin: 20px auto;
+  background-color: #8d549d;
+  padding: 10px 10px;
+  border-radius: 6px;
+}
+
+.topnav {
+  overflow: hidden;
+  margin: 20px auto;
+  background-color: #dcc7e0;
+  color: #613d6a;
+  padding: 10px 10px;
+  border-radius: 6px;
+}
+
+.topnav a {
+  display: left;
+  color: #613d6a;
+  text-align: center;
+}
+
+.lobby {
+  margin: 20px auto;
+  background-color: #8d549d;
+  padding: 10px 10px;
+  border-radius: 6px;
+}
+
+.lobby .room-choice {
+  margin: 20px auto;
+  background-color: #dcc7e0;
+  color: #613d6a;
+  padding: 10px 10px;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 150px 1fr 120px;
+  align-items: center;
+}
+
+.room-choice a {
+  color: #613d6a;
+  text-decoration: none;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.room-choice .information {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.room-choice .number-of-ppl {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.footer {
+  margin: 20px auto;
+  background-color: #8d549d;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 690px) {
+  .header,
+  .topnav,
+  .lobby,
+  .footer {
+    width: 650px;
   }
 }
