@@ -1,45 +1,4 @@
-html {
-  font-size: 18px;
-}
-
-@font-face {
-  font-family: 'Noto Sans Light';
-  src: url('./font/noto-sans-sc/NotoSansSC-Light.otf');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Sans Bold';
-  src: url('./font/noto-sans-sc/NotoSansSC-Bold.otf');
-  font-display: swap;
-}
-
-b,
-strong,
-.bold-text,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Noto Sans Bold', Helvetica, sans-serif;
-  font-weight: normal;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  font-family: 'Noto Sans Bold', Helvetica, sans-serif;
-}
-
-body {
-  background-color: #613d6a;
-  color: #fff;
-  font-family: 'Noto Sans Light', Helvetica, sans-serif;
-}
+@import './base.css';
 
 .header {
   margin: 20px auto;
