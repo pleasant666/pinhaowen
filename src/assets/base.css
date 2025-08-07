@@ -14,15 +14,7 @@ html {
   font-display: swap;
 }
 
-b,
-strong,
-.bold-text,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+b, strong, h1, h2, h3, h4, h5, h6 {
   font-family: 'Noto Sans Bold', Helvetica, sans-serif;
   font-weight: normal;
 }
