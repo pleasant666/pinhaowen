@@ -1,12 +1,5 @@
 @import './base.css';
 
-.header {
-  margin: 20px auto;
-  background-color: #8d549d;
-  padding: 10px 10px;
-  border-radius: 6px;
-}
-
 .topnav {
   overflow: hidden;
   margin: 20px auto;
@@ -59,15 +52,6 @@
 .room-choice .number-of-ppl {
   text-align: right;
   white-space: nowrap;
-}
-
-.footer {
-  margin: 20px auto;
-  background-color: #8d549d;
-  font-size: 0.8rem;
-  text-align: center;
-  padding: 10px 10px;
-  border-radius: 6px;
 }
 
 @media screen and (min-width: 690px) {
