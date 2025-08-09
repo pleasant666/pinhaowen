@@ -1,35 +1,54 @@
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+:root {
+  --bg: #8d549d;
+  --t: #dcc7e0
 }
 
-a,
-.green {
+.lobby {
+  margin: 20px auto;
+  background-color: var(--bg);
+  padding: 10px 10px;
+  border-radius: 6px;
+}
+
+.lobby .room-choice {
+  margin: 20px auto;
+  background-color: var(--t);
+  color: #613d6a;
+  padding: 10px 10px;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 150px 1fr 120px;
+  align-items: center;
+}
+
+.room-choice a {
+  color: #613d6a;
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.room-choice .information {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.room-choice .number-of-ppl {
+  text-align: right;
+  white-space: nowrap;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+@media screen and (min-width: 690px) {
+  header,
+  .topnav,
+  .lobby,
+  footer {
+    width: 650px;
   }
 }
