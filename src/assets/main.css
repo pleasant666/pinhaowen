@@ -1,9 +1,14 @@
 @import './base.css';
 
+:root {
+  --bg: #8d549d;
+  --t: #dcc7e0
+}
+
 .topnav {
   overflow: hidden;
   margin: 20px auto;
-  background-color: #dcc7e0;
+  background-color: var(--t);
   color: #613d6a;
   padding: 10px 10px;
   border-radius: 6px;
@@ -17,14 +22,14 @@
 
 .lobby {
   margin: 20px auto;
-  background-color: #8d549d;
+  background-color: var(--bg);
   padding: 10px 10px;
   border-radius: 6px;
 }
 
 .lobby .room-choice {
   margin: 20px auto;
-  background-color: #dcc7e0;
+  background-color: var(--t);
   color: #613d6a;
   padding: 10px 10px;
   border-radius: 6px;
