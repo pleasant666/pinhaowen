@@ -1,9 +1,21 @@
 @import './base.css';
 
+:root {
+  --bg: #8d549d;
+  --t: #dcc7e0
+}
+
+.header {
+  margin: 20px auto;
+  background-color: var(--bg);
+  padding: 10px 10px;
+  border-radius: 6px;
+}
+
 .topnav {
   overflow: hidden;
   margin: 20px auto;
-  background-color: #dcc7e0;
+  background-color: var(--t);
   color: #613d6a;
   padding: 10px 10px;
   border-radius: 6px;
@@ -17,14 +29,14 @@
 
 .lobby {
   margin: 20px auto;
-  background-color: #8d549d;
+  background-color: var(--bg);
   padding: 10px 10px;
   border-radius: 6px;
 }
 
 .lobby .room-choice {
   margin: 20px auto;
-  background-color: #dcc7e0;
+  background-color: var(--t);
   color: #613d6a;
   padding: 10px 10px;
   border-radius: 6px;
@@ -52,6 +64,15 @@
 .room-choice .number-of-ppl {
   text-align: right;
   white-space: nowrap;
+}
+
+.footer {
+  margin: 20px auto;
+  background-color: var(--bg);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 6px;
 }
 
 @media screen and (min-width: 690px) {
