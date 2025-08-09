@@ -60,10 +60,10 @@
 }
 
 @media screen and (min-width: 690px) {
-  .header,
+  header,
   .topnav,
   .lobby,
-  .footer {
+  footer {
     width: 650px;
   }
 }
