@@ -5,21 +5,6 @@
   --t: #dcc7e0
 }
 
-.topnav {
-  overflow: hidden;
-  margin: 20px auto;
-  background-color: var(--t);
-  color: #613d6a;
-  padding: 10px 10px;
-  border-radius: 6px;
-}
-
-.topnav a {
-  display: left;
-  color: #613d6a;
-  text-align: center;
-}
-
 .lobby {
   margin: 20px auto;
   background-color: var(--bg);
