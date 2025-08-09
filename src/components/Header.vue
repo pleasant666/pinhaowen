@@ -11,7 +11,7 @@
 <style scoped>
 header {
   margin: 20px auto;
-  background-color: #8d549d;
+  background-color: var(--bg);
   padding: 10px 10px;
   border-radius: 6px;
 }
