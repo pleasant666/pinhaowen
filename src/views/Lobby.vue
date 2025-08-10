@@ -29,6 +29,7 @@
   background-color: var(--bg);
   padding: 10px 10px;
   border-radius: 6px;
+  box-shadow: 5px 5px 10px #492f4f;
 }
 
 .room-choice {
@@ -75,7 +76,7 @@
   text-decoration: none;
 }
 
-.page-choice p{
+.page-choice p {
   font-size: 0.8rem;
 }
 </style>
