@@ -15,6 +15,5 @@ header {
   padding: 10px 10px;
   border-radius: 6px;
   box-shadow: 5px 5px 10px #492f4f;
-  box-shadow: 5px 5px 10px #492f4f;
 }
 </style>
