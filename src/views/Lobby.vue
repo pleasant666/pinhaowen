@@ -16,9 +16,9 @@
       <div class="number-of-ppl">5/10</div>
     </div>
     <div class="page-choice">
-      <a id="to-left" href="#">上一页</a>
-      <p>·第1页/共3页·</p>
-      <a id="to-right" href="#">下一页</a>
+      <a id="to-left" href="#">上一页·</a>
+      <p>第1页/共3页</p>
+      <a id="to-right" href="#">·下一页</a>
     </div>
   </div>
 </template>
